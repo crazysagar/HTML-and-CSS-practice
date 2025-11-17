@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: skyblue;
+}
+.flag {
+    height: 150px;
+    width: 250px;
+    background-color: white;
+    margin: 2em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle {
+    height: 116px;
+    width: 116px;
+    background: #c60022;
+    border-radius: 50%;
+}

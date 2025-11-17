@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+     background-color: #e1e1e1;
+    header{
+        background-color: gray;
+        padding: 15px;
+        text-align: center;
+        color: black ;
+        font-family: cursive;
+        
+    }
+}
+nav{
+    overflow: hidden;
+    background-color: #333;
+}
+nav a{
+    float: left;
+    color: lightseagreen;
+    padding: 15px 12px 9px 6px;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: lightgray;
+    color: red;
+}
+.column{
+    float: left;
+    padding: 10px;
+}
+.column.side{
+    width: 20%;
+}
+.column.middle{
+    width: 40%;
+}
+footer{
+    clear: both;
+    background-color: gray;
+    padding: 15px;
+    text-align: center;
+    color: black ;
+}
+@media screen and (max-width: 617px){
+    .column.side, .column.middle{
+        width: 100%;
+
+    }
+    p{
+        text-align: justify;
+
+    }
+}
+
+    div.gallery{
+        margin: 5px;
+        border: 5px solid black;
+        float: left;
+        width:  200px;
+    }
+    div.gallery :hover{
+        border: 5px solid Green;
+    }
+    div.gallery img{
+        width: 100%;
+        height: auto;
+    }
+    div.desc{
+        padding: 15px;
+        width: 100%;
+    }
+    input[type=type],select,textarea{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #abc;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+
+        input[type=submit]{
+            background-color: lightgray;
+            color: #333;
+            padding: 12px 20px;
+            cursor: pointer;
+            border: none;
+            margin: 2px;
+        }
+    }

@@ -1,0 +1,36 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --white: #fff;
+    --red: #FF0002;
+    --flag-hw: 200px;
+}
+.flag {
+    height: var(--flag-hw);
+    width: var(--flag-hw);
+    background: red;
+    margin: 35px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cross1, .cross2 {
+    height: calc(var(--flag-hw) * 3/16);
+    width: calc(var(--flag-hw) * 5/8);
+    background: var(--white);
+}
+.cross2 {
+    transform: rotate(90deg);
+    /* left: ; */
+}
+.cross1:after {
+    content: "";
+    height: 38px;
+    width: 126px;
+    background: white;
+    transform: rotate(90deg);
+    z-index: 99999;
+    display: inline-block;
+}

@@ -1,0 +1,42 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --bg-word: #5134ff;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1:after {
+    content: "";
+    animation: 5s infinite swap;
+    background: var(--bg-word);
+    border-radius: 4px;
+    margin-left: 4px;
+    padding: 10px;
+    color: aliceblue;
+}
+@keyframes swap {
+    
+ 
+    0% {
+        content: "gaming";
+    }
+    25% {
+        content: "coding";
+    }
+    50% {
+        content: "music";
+    }
+    75% {
+        content: "drama";
+    }
+    100% {
+        content: "gaming";
+    }
+}
